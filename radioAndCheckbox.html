@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+	 <meta charset="utf-8">
+     <title> 웹 폼</title>
+     <style>
+	 body {
+		background-color:#fff; 
+	 }
+	 form fieldset{
+		margin-bottom:25px; 
+	 }	 
+	 form legend{
+		font-size:15px;
+		font-weight:600; 
+	 }
+	 form label.reg {
+		font-size:14px;
+		color:#390;
+		font-weight:bold;
+		width:110px;
+		float:left;
+		text-align:right;
+		margin-right:10px;
+	 }
+	 form ul li{
+		list-style:none; 
+		margin: 15px 0;	
+		font-size:14px;	
+	 }
+ 
+
+	 #member, #stuffs {
+		width:50px; 
+	 }
+	 
+	 #pre {
+		margin-left:15px;
+	 }
+	 </style>
+  </head>
+  <body>
+	<form>
+        <fieldset>
+            <legend>학과를 선택하세요</legend>
+                <ul>
+                    <li><input type="radio" name="subject" value="소프트웨어">소프트웨어</li>
+                    <li><input type="radio" name="subject" value="건축학과">건축학과</li>
+                    <li><input type="radio" name="subject" value="메카트로닉스">메카트로닉스</li>
+                </ul>
+				<!-- radio 타입은 같은 질문의 'name'이 같아야 선택한 하나의 항목만 데이터로 제출된다 -->
+        </fieldset>
+        <fieldset>
+            <legend>구독하고 싶은 뉴스를 선택하세요</legend>
+                <ul>
+                    <li><input type="checkbox" name="email1" value="해외뉴스">해외뉴스</li>
+                    <li><input type="checkbox" name="email2" value="경제뉴스">경제뉴스</li>
+                    <li><input type="checkbox" name="email3" value="IT뉴스">IT뉴스</li>
+                </ul>
+        </fieldset>
+    </form>
+  </body>
+</html>
