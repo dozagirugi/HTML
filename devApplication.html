@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8" />
+		<title>프런트엔드 개발자 지원서</title>
+		<style>
+			#container {
+				width: 520px;
+				border: 1px solid black;
+				padding: 20px 40px;
+				margin: 0 auto;
+			}
+			fieldset {
+				margin-bottom: 15px;
+			}
+			legend {
+				font-weight: bold;
+			}
+			ul {
+				list-style-type: none;
+			}
+			li {
+				line-height: 30px;
+			}
+		</style>
+	</head>
+	<body>
+		<!-- 이미지폴더의 quiz-2을 보고 완성하라! -->
+		<div id="container">
+			<h1>프런트엔드 개발자 지원서</h1>
+			<p>HTML, CSS, Javascript에 대한 기술적 이해와 경험이 있는 분을 찾습니다.</p>
+			<hr>
+			<form>
+				<h4>개인정보</h4>
+				<ul>
+					<li>
+						<label>이름 <input type="text" autofocus placeholder="이름을 입력하세요"></input></label>
+					</li>
+					<!-- autofocus는 화면에 처음 표시되는 커서 위치 -->
+					<!-- placeholder는 기본으로 표시되는 설명글(클릭하면 사라짐) -->
+					<li>
+						<label>연락처 <input type="tel" autofocus placeholder="하이픈 없이 번호만"></input></label>
+					</li>
+				</ul>
+				<h4>지원 분야</h4>
+				<ul>
+					<li>
+						<label> <input type="radio" name="field" value="web"/> 웹 퍼블리싱 </label>
+					</li>
+					<li>
+						<label> <input type="radio" name="field" value="app"/> 어플리케이션 제작 </label>
+					</li>
+					<li>
+						<label> <input type="radio" name="field" value="dev"/> 개발환경 개션 </label>
+					</li>
+				</ul>
+				<h4>지원 동기</h4>
+				<label>
+					<textarea name="지원동기" cols="50" rows="5"></textarea>
+					<!-- 여러줄을 넣을수 있는 입력창을 만듬. cols는 가로 너비를 글자수 기준으로 제한. rows는 세로 너비를 줄 수로 제한 -->
+				</label>
+				<div>
+					<button type="submit" value="제출하기">제출하기</button>
+					<button type="reset" value="다시쓰기">다시쓰기</button>
+					<!-- 접수하기 버튼은 submit 타입 입력, 다시쓰기 버튼은 reset 타입 입력 -->
+				</div>
+			</form>
+		</div>
+	</body>
+</html>
